@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <link rel="stylesheet" href="Weatherstyle.css">
+</head>
+<body>
+    <div class="Main">
+        <div class="headings"> 
+        <h1>Weather Forecast</h1>
+        <div class="search">
+           <input type="text" id="search_bar" placeholder="Enter your City">
+           <button id="searchbutt">Search</button>       
+        </div>
+        </div>
+        <div class="upperbox"> 
+        <div class="inforlocation">
+            <h1 id="locationName"> <i class="fa-solid fa-location-dot"style="color: #379777;"></i>City</h1>
+           <br> <hr>
+            <p id="cityInfo">Country,time</p>
+        </div> 
+      
+        <div class="tempreport">
+           
+            <h1 id="currtempC"><i class="fa-solid fa-temperature-three-quarters"style="color: #379777;"></i>0 <span>C</span></h1>
+            <h1 id="currtempF"><i class="fa-solid fa-temperature-three-quarters" style="color: #379777;"></i>0 <span>F</span></h1>
+            <h1 id="currClouds"><i class="fa-solid fa-cloud" style="color: #379777;"></i>0% <span>Clouds</span></h1>
+            <span id="currWconditionIcon"><img src="" alt=""></span><span id="currWcond">Condition</span>
+        </div>
+        </div>
+         
+        <div class="lowerbox">
+            <div class="nextDays">
+            <h3>Next 3 Days</h3> <hr>
+                <div class="daysdata">
+                    <div class="inforND1">
+                      <h4 id="nextDdate1">--/--/----</h4>
+                      <span id="nextDcond1icon"><img src="" alt=""></span><span id="nextDcond1">Condition</span>
+                       
+                       <p id="nextDHtempC1"><i class="fa-solid fa-temperature-full" style="color: #379777;"></i>0 C</p>
+                       <p id="nextDLtempC1"><i class="fa-solid fa-temperature-low" style="color: #379777;"></i>0 C</p>
+                       <p id="nextDwind1"><i class="fa-solid fa-wind"style="color: #379777;"></i>0 kph</p>
+                    </div>
+                    <div class="inforND2">
+                        <h4 id="nextDdate2">--/--/----</h4>
+                        <span id="nextDcond2icon"><img src="" alt=""></span><span id="nextDcond2">Condition</span>
+                         <p id="nextDHtempC2"><i class="fa-solid fa-temperature-full" style="color: #379777;"></i>0 C</p>
+                       <p id="nextDLtempC2"><i class="fa-solid fa-temperature-low" style="color: #379777;"></i>0 C</p>
+                         <p id="nextDwind2"><i class="fa-solid fa-wind"style="color: #379777;"></i>0 kph</p>
+                      </div>
+                      <div class="inforND3">
+                        <h4 id="nextDdate3">--/--/----</h4>
+                           <span id="nextDcond3icon"><img src="" alt=""></span><span id="nextDcond3">Condition</span>
+                         <p id="nextDHtempC3"><i class="fa-solid fa-temperature-full" style="color: #379777;"></i>0 C</p>
+                       <p id="nextDLtempC3"><i class="fa-solid fa-temperature-low" style="color: #379777;"></i>0 C</p>
+                         <p id="nextDwind3"><i class="fa-solid fa-wind"style="color: #379777;"></i>0 kph</p>
+                      </div>
+                </div>
+           
+            </div>
+<div class="windbox">
+    <h3>Today's Wind</h3><hr>
+    <div class="windinfor">
+       <span id="windkph"><i class="fa-solid fa-wind"style="color: #379777;"></i>0 kph</span>
+       <span id="winddegree"><i class="fa-solid fa-diamond-turn-right"style="color: #379777;"></i>0 </span>
+       <span id="WindDir"><i class="fa-solid fa-compass"style="color: #379777;"></i>North</span>
+    </div>
+</div>
+
+        </div>
+
+        <div class="sunshape">
+
+        </div>
+    </div>
+    <script src="weatherlogic.js"></script>
+</body>
+</html>
