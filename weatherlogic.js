@@ -1,5 +1,6 @@
 const Url = "https://api.weatherapi.com/v1/forecast.json?key=458f92c326104febab282844241409&q=";
 let searchbutt=document.querySelector("#searchbutt");
+
 searchbutt.onclick= async (e)=>{
   let userlocation=document.querySelector("#search_bar").value;
    let weatherResponse= await fetch(`${Url}${userlocation}&days=3`);
@@ -111,3 +112,4 @@ currWdir.innerHTML=`<span><i class="fa-solid fa-compass"style="color: #379777;">
 
 
     
+
