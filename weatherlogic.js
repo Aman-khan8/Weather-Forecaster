@@ -1,4 +1,4 @@
-const Url = "http://api.weatherapi.com/v1/forecast.json?key=458f92c326104febab282844241409&q=";
+const Url = "https://api.weatherapi.com/v1/forecast.json?key=458f92c326104febab282844241409&q=";
 let searchbutt=document.querySelector("#searchbutt");
 searchbutt.onclick= async (e)=>{
   let userlocation=document.querySelector("#search_bar").value;
@@ -107,6 +107,7 @@ currWdegree.innerHTML=`<span><i class="fa-solid fa-diamond-turn-right"style="col
 currWdir.innerHTML=`<span><i class="fa-solid fa-compass"style="color: #379777;"></i>${weatherData.current.wind_dir} </span>`;
 
     }
+
 
 
     
